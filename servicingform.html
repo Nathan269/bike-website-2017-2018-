@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BKB Wesbsite</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="servicingform.css" rel="stylesheet" type="text/css"><!--Links HTML with CSS page-->
+<meta name="description" content="This websites provides information on bike prices, offers bike hire, and users can also watch videos on mountain biking as well.">
+<meta name="author" content="nathan bayne">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+<div class="banner"><!--Name of div for image-->
+
+	<header>
+   		<img src="Images/Logo.PNG" alt="BKB Logo">
+   		<img src="Images/mountainscenery.jpg" alt="BKB"> <!--displays image of "#"-->
+	</header>
+	
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link disabled" href="bikehire.html">Bike Hire</a>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="servicingform.html">Servicing Form</a>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="biketrials.html">Bike Trails</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form><!--HTML5 form element-->
+  </div>
+</nav>
+   
+   <div id="container">
+      
+       <main class="bikes">
+       
+             <!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+		 <br>
+		 
+<h1>Signing up</h1><!--Largest title on the page-->
+	
+			<p>If you are interested in signing up to join the website please fill out the following:</p>
+			<!--Displays text-->
+			<br>
+  <fieldset>		
+  <form action="/action_page.php" method="get">
+  
+  <label>Name:</label><br/>
+  <input type="text" required/><br/>
+  <br>
+  
+  <label>Email:</label><br/>
+  <input type="text" required/><br/>
+   <br>
+   
+  <label>Full service or half service?</label><br/>
+  <select id="Service" name="Service" size="2" required>
+  	<option>Full service</option>
+  	<option>Half service</option>
+  </select>
+  <br> <br>
+  
+  <label>Type of Bike?</label><br/>
+   <select id="Type" name="Type" size="2" required>
+	<option>Mountain</option>
+  	<option>BMX</option>
+  	<option>Other</option>
+  </select>
+<br><br>
+ 
+  <label>Additional Items?</label><br/>
+	<input type="checkbox" id="MudFlaps" name="checkbox" value="newsletter">
+    <label for="MudFlaps">Mud flaps</label>
+    <br>
+    <input type="checkbox" id="NewTyres" name="checkbox" value="newsletter">
+    <label for="NewTyres">New tyres</label>
+    <br>
+    <input type="checkbox" id="Lights" name="checkbox" value="newsletter">
+    <label for="Lights">Lights</label>
+  <br><br>
+  
+   <label>Additional Comments:</label><br/>
+  <input name="Comments" type="text" required/><br/>
+  
+  <br> <br>
+  
+  <input type="submit" value="Submit"/>
+ </form>
+   <!--Creates form for user to type and submit information--> 
+ </fieldset>
+	   </main>
+		
+<aside>
+	<h2>Contact Information</h2><!--Second largest title on the page-->
+	<div class="contact information">
+		
+<ul>
+  <li><a href="#">Email: bwm.music@yahoo.co.uk</a></li>
+  <li><a href="#">Telephone Number: 07788273849</a></li>
+  <li><a href="#">Address: 3 Portland Road</a></li>
+  <li><a href="#">Opening Hours: 09:00-17:00</a></li>
+</ul>
+		
+	</div>	
+</aside>
+
+</div>
+<footer>Sponsors</footer><!--Displays text in the footer-->
+</div>
+</body>
+</html>
+

@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* box-sizing gives an element it's specified width & height excluding padding or margin*/
+*, *:before, *:after {
+  box-sizing: border-box;
+	margin:0;
+    padding:0;
+}
+/* set all padding and margin to zero */
+body{ margin:0; padding:0;}
+
+/* set the width of the wrapper class to 90% of screen with max-width of 1366px */
+div.wrapper {
+    width: 90%;
+    border: 1px solid gray;
+	max-width:1366px;
+	margin:0px auto;
+}
+
+/* style header & footer elements and clear any left float */
+header, footer {
+    padding: 1em; 
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	margin:0px
+}
+
+/* set width of nav to 100% with min-height value */
+nav{
+	width:100%; 
+	min-height:25px; 
+	background: #B09696; 
+	}
+
+/* remove bullet points from ul */
+nav ul {
+    list-style-type: none;
+}
+/* display ul horizontally */
+nav ul li{
+    display: inline;
+}
+/* remove default underline from anchor element text */
+nav ul a {
+    text-decoration: none;
+}
+
+/* set width to auto & overflow hidden which stops the content over flowing the footer */
+#container{ 
+	width: auto; 
+	background: #C55B5C;
+	overflow: hidden;
+	 /*min-height: 100%;*/
+}
+
+/* float main element to the left, set the width and give min-height */
+main {
+    float: left;
+    width: 75%;
+    background: #E40E12;
+	min-height: 650px;
+	padding:10px;
+	 
+}
+/* float aside element to the left (it will wrap to the side of the main element), set the width and give min-height */
+aside {
+	float:left;
+	width:25%;
+    background:black;
+	min-height:650px;
+	padding:10px;
+}
+
+img{
+	width: 400px;
+	height: 250px;
+		
+}
+
+p{
+	text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* media queries */
+/* viewport hits 550px apply diferent style to the elements in the query */
+@media only screen and (max-width : 713px ){
+   /* clear the float and set width to 100% of screen */
+	aside{
+		clear:both;
+		width:100%;
+		height:auto;
+	}
+	/* clear the float and set width to 100% of screen */
+	main {
+        clear:both;
+		width:100%;
+		height:auto;
+    }
+	/* apply word wrap for smaller screen */
+	p{word-wrap: break-word;}
+	/* display li as block element (vertically) */
+	nav ul li{
+    display: block;
+	}
+	/* align nav to centre */
+	nav {text-align:center;}
+}
+		 
+/*Changes colour background when the mouse hovers over the links*/
+li a:hover {
+    background-color: #111;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+/* Makes the links to the pages horizontal*/
+ul{
+	display: inline-block;
+	text-align: left;
+	list-style-type: none;
+	font-size: 20px
+}
+/*Colour of title text is white*/
+h2{
+	color: white
+}
+/*Colour of paragraph text is white*/
+p{
+	color: white
+}
+
+/*Adjustable font size, text is at the left side of the page, margin is used for spacing between each link*/
+div.links nav ul li{
+	font-size: 35px;
+	text-align: left;
+	margin-right: 40px;
+}
+
+	
